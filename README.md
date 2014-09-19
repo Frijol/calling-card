@@ -5,7 +5,7 @@ Tap an RFID card on a Tessel RFID reader to send a text over Twilio to any phone
 
 ## You need
 * [Tessel](tessel.io) + [RFID Module](tessel.io/modules#module-rfid) + RFID card (one comes with the module)
-* 
+* A phone (to receive texts)
 
 ## Setting up
 1. Set up your Twilio account ([it's free!](https://www.twilio.com/try-twilio))
