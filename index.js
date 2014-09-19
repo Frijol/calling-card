@@ -1,4 +1,4 @@
-// Require configuration variables
+// Configuration variables
 var config = require('./config.json');
 
 // Require node modules
@@ -13,5 +13,28 @@ rfid.on('ready', function () {
   console.log('RFID reader ready and waiting.')
   rfid.on('data', function (cardData) {
     console.log(cardData.uid);
+    sendText( config.num_to_call, config.twilio_num, cardData.uid + ' says hi');
   });
 });
+
+rfid.on('error', function(err){
+  console.log('Error:', err);
+});
+ 
+function sendText(to,from,msg) {
+  console.log('Sending text...');
+  twilio.sms.messages.create({
+    to: to,
+    from: from,
+    body:msg
+  }, function(error, message) {
+    if (!error) {
+      console.log('Success! The SID for this SMS message is:');
+      console.log(message.sid);
+      console.log('Message sent on:');
+      console.log(message.dateCreated);
+    } else {
+      console.log('Oops! There was an error.', error);
+    }
+  });
+}
