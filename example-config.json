@@ -1,0 +1,6 @@
+{
+  "account_sid": "XXXXXXXXXXXXXXX",
+  "auth_token": "XXXXXXXXXXXX",
+  "twilio_num": "XXXXXXXXXX",
+  "num_to_call": "XXXXXXXXXX"
+}
