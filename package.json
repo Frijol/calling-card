@@ -1,0 +1,29 @@
+{
+  "name": "calling-card",
+  "version": "1.0.0",
+  "description": "Tap an RFID card to Tessel to send a Twilio text",
+  "main": "index.js",
+  "dependencies": {
+    "rfid-pn532": "^0.1.5",
+    "twilio": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frijol/calling-card"
+  },
+  "keywords": [
+    "tessel",
+    "twilio",
+    "rfid"
+  ],
+  "author": "Kelsey Breseman",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Frijol/calling-card/issues"
+  },
+  "homepage": "https://github.com/Frijol/calling-card"
+}
