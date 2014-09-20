@@ -21,6 +21,7 @@ Tap an RFID card on a Tessel RFID reader to send a text over Twilio to any phone
 This is a work in progress; it would be much more useful to create a lookup for different UIDs, and associate specific RFID cards with specific people.
 
 ## Use Cases
+* "I'm home" text to family members
 * Someone came to visit, but you weren't there (think Victorian calling cards)
 * Very fast check-ins at locations with associated RFID cards (e.g. if you could register a transit card with Foursquare to check in at locations)
 * Tool checkout– tap to text someone that you're borrowing their thing
