@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "rfid-pn532": "^0.1.5",
-    "twilio": "^1.7.0"
+    "twilio": "^1.7.0",
+    "underscore": "^1.7.0"
   },
   "devDependencies": {},
   "scripts": {

@@ -10,6 +10,7 @@ var rfidLib = require('rfid-pn532');
 var rfid = rfidLib.use(tessel.port['A']);
 
 rfid.on('ready', function () {
+  tessel.led[1].output(1);
   console.log('RFID reader ready and waiting.')
   rfid.on('data', function (cardData) {
     console.log(cardData.uid);
@@ -23,10 +24,10 @@ rfid.on('error', function(err){
  
 function sendText(to,from,msg) {
   console.log('Sending text...');
-  twilio.sms.messages.create({
+  twilio.sendMessage({
     to: to,
     from: from,
-    body:msg
+    body: msg
   }, function(error, message) {
     if (!error) {
       console.log('Success! The SID for this SMS message is:');
