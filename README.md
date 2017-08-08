@@ -1,6 +1,8 @@
 Calling Card
 ============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Frijol/calling-card.svg)](https://greenkeeper.io/)
+
 Tap an RFID card on a Tessel RFID reader to send a text over Twilio to any phone.
 
 ## You need
